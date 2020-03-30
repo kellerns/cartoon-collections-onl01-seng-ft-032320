@@ -1,7 +1,7 @@
 def roll_call_dwarves(dwarves)
   roll_call = []
   dwarves.each_with_index{|name, number| roll_call << "#{number+1}. #{name}"} 
-  end
+  
   # Your code here
 end
 

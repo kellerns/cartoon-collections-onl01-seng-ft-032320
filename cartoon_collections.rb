@@ -19,7 +19,11 @@ end
 def long_planeteer_calls(calls)
   i = 0
   while i < collection.length
-  return collection[i] if yield(collection[i])
+  if collection(i).length > 4
+    true
+  else
+    false
+  end
   i += 1
   end
   

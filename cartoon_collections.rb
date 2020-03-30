@@ -16,17 +16,18 @@ def summon_captain_planet(calls)
   
 end
 
-def long_planeteer_calls(calls)
+def long_planeteer_calls(words)
+  tf_array = []
   i = 0
-  while i < collection.length
-  if collection(i).length > 4
-    true
+  while i < words.length
+  if words[i].length > 4
+    tf_array << "true"
   else
-    false
+    tf_array << "false"
   end
   i += 1
   end
-  
+  tf_array.include?("true")
 end
 
 # def find_the_cheese# code an argument here

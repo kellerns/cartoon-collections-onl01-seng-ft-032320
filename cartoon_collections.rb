@@ -9,7 +9,7 @@ end
 
 def summon_captain_planet(calls)
   
-  calls.collect{|calls| 
+  calls.collect{|calls| calls + "!"
   
 end
 
